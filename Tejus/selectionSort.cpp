@@ -35,3 +35,4 @@ void main()
         cout<<a[i]<<" ";
     }    
 }
+
