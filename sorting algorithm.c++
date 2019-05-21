@@ -1,4 +1,4 @@
-              sorting algorithm in c++
+//sorting algorithm in c++
 
 #include<iostream.h>
 #include<conio.h>
