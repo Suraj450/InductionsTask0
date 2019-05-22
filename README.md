@@ -1,9 +1,33 @@
-# InductionsTask0
-## Let's git Blame others! 
 
-* Fork this repo
-* Clone it!
-* Add a sorting algo in the language of you choice!
-* Commit and push it.
-* Create a pull request!
-* If your code is worthy enough, your PR will be accepted and you shall possess the power of git! 
+
+#include <iostream>
+using namespace std;
+ main()
+{
+	int n, i, j, temp;
+	cout<<"Enter total number of elements ";
+	cin>>n;
+	int arr[n];
+	for(i=0; i<n; i++)
+	{
+		cin>>arr[i];
+	}
+
+	for(i=0; i<n-1; i++)
+	{
+		for(j=0; j<n-i-1; j++)
+		{
+			if(arr[j]>arr[j+1])
+			{
+				temp=arr[j];
+				arr[j]=arr[j+1];
+				arr[j+1]=temp;
+			}
+		}
+	}
+	cout<<"Sorted list in ascending order \n";
+	for(i=0; i<n; i++)
+	{
+		cout<<arr[i]<<" ";
+	}
+}
